@@ -170,15 +170,17 @@ Ta có thể tìm luồng cực đại trong một mạng có trọng số với
 
 ### Thu gom rác trong quản lý bộ nhớ (Garbage collection)
 
-Thuật toán Cheney dùng BFS trong việc thu gom rác bộ nhớ để duy trì các tham chiếu còn hoạt động trên bộ nhớ heap
+Thuật toán Cheney dùng BFS trong việc thu gom rác bộ nhớ để duy trì các tham chiếu còn hoạt động trên bộ nhớ heap.
 
 #### Ví dụ :
 
 - Python dùng việc đếm tham chiếu để lưu trữ một bộ đếm để đếm xem có bao nhiêu tham chiếu đang trỏ đến một object nào đó. Nếu bộ đếm bằng không, có nghĩa là không có một tham chiếu đang hoạt động trỏ đến object đó trong bộ nhớ heap. Có nghĩa là object này có thể được thu gom bởi bộ thu gom rác và Python sẽ loại nó khỏi bộ nhớ heap.
 - Còn liên quan đến Java, có một vài phiên bản của bộ thu gom rác. Nhưng có một thuật toán chuỗi dùng DFS để duy trì các tham chiếu đang hoạt động trong bộ nhớ heap khi thu gom rác. Vì các tham chiếu này hình thành đồ thị có hướng nên ta có thể dùng các phương pháp đi băng qua một đồ thị như BFS hoặc DFS.
-- Trong trường hợp này, việc thu gom rác bộ nhớ hoặc những phương pháp liên quan dùng thuật toán BFS<
+- Trong trường hợp này, việc thu gom rác bộ nhớ hoặc những phương pháp liên quan dùng thuật toán BFS.
 
 ### Trong việc tuần tự hóa (Serialization)
 
 Khi tuần tự hóa và khôi phục tuần tự hóa (serialization and deserialization) các cấu trúc dữ liệu dạng cây (khi thứ tự là quan trọng), thuật toán BFS cho phép cấu trúc dạng cây được tái tạo lại theo một cách thức hiệu quả.
+
+
 
