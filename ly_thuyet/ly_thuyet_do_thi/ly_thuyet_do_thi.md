@@ -1,6 +1,6 @@
 # Lý thuyết đồ thị
 
-Nhiều vấn đề trí tuệ nhân tạo có thể rút lại là giải quyết viêc tìm ra một con đường trong một đồ thị G(V,E)
+Nhiều vấn đề trí tuệ nhân tạo có thể rút lại ở việc giải bài toán tìm đường đi trong một đồ thị G(V,E)
 
 G : Graph, V : Vertex, E : Edge
 
