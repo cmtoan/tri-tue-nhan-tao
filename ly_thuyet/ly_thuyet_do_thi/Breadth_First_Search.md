@@ -62,14 +62,123 @@ Ban đầu ta có hàng đợi rỗng và ta kiểm tra xem ta có từng đi qu
 Thuật toán kết thúc khi không còn nốt nào trong hàng đợi nữa.
 
 
-## Code
+## Code Java
 
+Vertex.java
+````
+import java.util.ArrayList;
+import java.util.List;
 
-````
+public class Vertex {
+    private String name;
+    private boolean visited;
+    private List<Vertex> adjacentList;
+
+    public Vertex(String name) {
+        this.name = name;
+        this.adjacentList = new ArrayList<>();
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
+
+    public List<Vertex> getAdjacentList() {
+        return adjacentList;
+    }
+
+    public void addNeighbors(List<Vertex> neighbors) {
+        this.adjacentList.addAll(neighbors);
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
 ````
 
+BreadthFirstSearch.java
 ````
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BreadthFirstSearch {
+    public void traverse(Vertex root) {
+        Queue<Vertex> queue = new LinkedList<>();
+
+        root.setVisited(true);
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Vertex actualVertex = queue.remove();
+            System.out.println("Actual visited vertex : " + actualVertex);
+
+            for (Vertex vertex : actualVertex.getAdjacentList()) {
+                if (!vertex.isVisited()) {
+                    vertex.setVisited(true);
+                    queue.add(vertex);
+                }
+            }
+        }
+    }
+}
 ````
 
+Main.java
 ````
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
+
+        Vertex a = new Vertex("A");
+        Vertex b = new Vertex("B");
+        Vertex c = new Vertex("C");
+        Vertex d = new Vertex("D");
+        Vertex e = new Vertex("E");
+        Vertex f = new Vertex("F");
+        Vertex g = new Vertex("G");
+        Vertex h = new Vertex("H");
+
+        a.addNeighbors(List.of(b, f, g));
+        b.addNeighbors(List.of(a, c, d));
+        c.addNeighbors(List.of(b));
+        d.addNeighbors(List.of(b, e));
+        f.addNeighbors(List.of(a));
+        g.addNeighbors(List.of(a, h));
+        h.addNeighbors(List.of(g));
+
+        breadthFirstSearch.traverse(a);
+    }
+}
 ````
+
+## Ứng dụng
+
+### Trong thuật toán tìm đường đi (Pathfinding algorithms)
+Phương pháp trí tuệ nhân tạo (máy học - machine learning) giúp robot khám phá khu vực xung quanh nó dễ dàng hơn với BFS và DFS.
+
+### Luồng cực đại (Maximum flow)
+
+Ta có thể tìm luồng cực đại trong một mạng có trọng số với thuật toán Edmonds-Karp dùng BFS để tìm đường tăng luồng (augmenting paths).  
+
+### Thu gom rác trong quản lý bộ nhớ (Garbage collection)
+
+Thuật toán Cheney dùng BFS trong việc thu gom rác bộ nhớ để duy trì các tham chiếu còn hoạt động trên bộ nhớ heap
+
+#### Ví dụ :
+
+- Python dùng việc đếm tham chiếu để lưu trữ một bộ đếm để đếm xem có bao nhiêu tham chiếu đang trỏ đến một object nào đó. Nếu bộ đếm bằng không, có nghĩa là không có một tham chiếu đang hoạt động trỏ đến object đó trong bộ nhớ heap. Có nghĩa là object này có thể được thu gom bởi bộ thu gom rác và Python sẽ loại nó khỏi bộ nhớ heap.
+- Còn liên quan đến Java, có một vài phiên bản của bộ thu gom rác. Nhưng có một thuật toán chuỗi dùng DFS để duy trì các tham chiếu đang hoạt động trong bộ nhớ heap khi thu gom rác. Vì các tham chiếu này hình thành đồ thị có hướng nên ta có thể dùng các phương pháp đi băng qua một đồ thị như BFS hoặc DFS.
+- Trong trường hợp này, việc thu gom rác bộ nhớ hoặc những phương pháp liên quan dùng thuật toán BFS<
+
+### Trong việc tuần tự hóa (Serialization)
+
+Khi tuần tự hóa và khôi phục tuần tự hóa (serialization and deserialization) các cấu trúc dữ liệu dạng cây (khi thứ tự là quan trọng), thuật toán BFS cho phép cấu trúc dạng cây được tái tạo lại theo một cách thức hiệu quả.
+
