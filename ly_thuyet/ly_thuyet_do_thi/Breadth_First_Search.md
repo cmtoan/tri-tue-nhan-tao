@@ -31,7 +31,7 @@ BFS có một số ứng dụng, nhưng trong trường hợp có thể dùng BF
 
 BFS có ưu điểm là nó tạo một đường đi ngắn nhất. Thuật toán Dijkstra chủ yếu dùng BFS khi tất cả các cạnh có trọng số bằng 1.
 
-BFS dựa chủ yếu vào kiểu dữ liệu hàng đợi (queue).
+BFS dựa chủ yếu vào kiểu dữ liệu trừu tượng hàng đợi (queue).
 
 
 ## II. Thuật toán
@@ -55,7 +55,7 @@ bfs(vertex):
 
 ### Giải thích
 
-Thuật toán này sử dụng kiểu dữ liệu hàng đợi (FIFO : first in first out)
+Thuật toán này sử dụng kiểu dữ liệu trừu tượng hàng đợi (queue) FIFO (first in first out)
 
 Ban đầu ta có hàng đợi rỗng và ta kiểm tra xem ta có từng đi qua nốt này hay chưa.
 
