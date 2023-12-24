@@ -4,5 +4,5 @@ Nhiều vấn đề trí tuệ nhân tạo có thể rút lại ở việc giả
 
 G : Graph, V : Vertex, E : Edge
 
-1. [Breadth-First Search (BFS)](Breadth_First_Search.md)
-2. 
+1. [Breadth-First Search (BFS) - Tìm kiếm theo chiều rộng](Breadth_First_Search.md)
+2. [Depth First Search (DFS) - Tìm kiếm theo chiều sâu](Depth_First_Search.md)
