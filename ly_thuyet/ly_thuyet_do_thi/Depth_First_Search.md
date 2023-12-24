@@ -64,7 +64,7 @@ Nó có độ phức tạp khi chạy thuật toán là O(V+E).
 
 Depth-first search (DFS) đi đến xa nhất có thể dọc theo từng nhánh trước khi quay lại và đi đến các đỉnh khác.
 
-## Code Java
+## III. Code Java
 
 Vertex.java
 ````
@@ -220,7 +220,7 @@ public class Main {
 
 [Xem ở đây](../../implementation/depth_first_search/src)
 
-## So sánh bộ nhớ sử dụng giữa BFS và DFS
+## IV. So sánh bộ nhớ sử dụng giữa BFS và DFS
 
 DFS dùng ít bộ nhớ hơn BFS
 
@@ -266,7 +266,7 @@ Vậy trong trường hợp tệ nhất, với thuật toán Depth First Search,
 | Nó tìm những thành tố gần nó nhanh hơn (khi **đỉnh gần với nốt khởi đầu**) | Nó tìm thấy thành tố ở ngọn của nhánh nhanh hơn (khi **đỉnh ở xa nốt khởi đầu**)                            |
 
 
-## Ứng dụng của Depth First Search
+## V. Ứng dụng của Depth First Search
 
 ### Trong thuật toán tìm đường đi (Pathfinding algorithms)
 Phương pháp trí tuệ nhân tạo (máy học - machine learning) giúp robot khám phá khu vực xung quanh nó dễ dàng hơn với BFS và DFS.

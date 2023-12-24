@@ -62,7 +62,7 @@ Ban đầu ta có hàng đợi rỗng và ta kiểm tra xem ta có từng đi qu
 Thuật toán kết thúc khi không còn nốt nào trong hàng đợi nữa.
 
 
-## Code Java
+## III. Code Java
 
 Vertex.java
 ````
@@ -161,7 +161,7 @@ public class Main {
 
 [Xem ở đây](../../implementation/breadth_first_search/src)
 
-## Ứng dụng
+## IV. Ứng dụng
 
 ### Trong thuật toán tìm đường đi (Pathfinding algorithms)
 Phương pháp trí tuệ nhân tạo (máy học - machine learning) giúp robot khám phá khu vực xung quanh nó dễ dàng hơn với BFS và DFS.
