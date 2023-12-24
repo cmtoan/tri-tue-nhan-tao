@@ -237,7 +237,7 @@ Trước hết, ta cần trả lời cho câu hỏi có bao nhiêu nốt lá tro
 
 Nếu ta có N thành tố trong một cây nhị phân cân bằng thì ta có N/2 nốt lá. 
 
-Dĩ nhiên với ký hiệu O lớn, ta không quan tâm đến hằng số, tức là tuy ở đây O(N/2) thì cũng giống như O(N). Vậy đối với BFS thì độ phức tạp về bộ nhớ là tuyến tính nếu đồ thị có N thành tố.
+Dĩ nhiên với ký hiệu O lớn, ta không quan tâm đến hằng số, tức tuy ở đây độ phức tạp là O(N/2) thì cũng giống như O(N). Vậy đối với BFS thì độ phức tạp về bộ nhớ là tuyến tính nếu đồ thị có N thành tố.
 
 Trong trường hợp tệ nhất, ta cần **O(N)** bộ nhớ nếu ta muốn đi hết một cây nhị phân với N thành tố bằng thuật toán Breadth First Search.
 
@@ -248,7 +248,7 @@ Depth First Search sẽ đi xa nhất có thể trên một nhánh.
 
 Chẳng hạn trên một đồ thị, ta chỉ đi đến nốt lân cận ở bên trái, và ta tiếp tục đi phía bên trái này cho đến khi ta đi đến nốt lá.
 
-Trong trường hợp tệ nhất, ta cần phải lưu trữ tất cả các nốt trên kiểu cấu trúc dữ liệu trừu tượng ngăn xếp cho tận đến khi ta đến được một nút lá. Sau đó, ta sẽ quay ngược trở lại và xóa nút hiện thời khỏi ngăn xếp.
+Trong trường hợp tệ nhất, ta cần phải lưu trữ tất cả các nốt trên kiểu cấu trúc dữ liệu trừu tượng ngăn xếp cho tới khi ta đến được một nút lá. Sau đó, ta sẽ quay ngược trở lại và xóa nút hiện thời khỏi ngăn xếp.
 
 Tức trong trường hợp tệ nhất, ta phải lưu trữ số nốt bằng với chiều cao của cây nhị phân. Cụ thể, trong đồ thị phía trên, độ cao của cây nhị phân là 4 (4 lớp).
 
@@ -263,7 +263,7 @@ Vậy trong trường hợp tệ nhất, với thuật toán Depth First Search,
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Trong trường hợp tệ nhất, độ phức tạp bộ nhớ là **O(N)**                   | Trong trường hợp tệ nhất, độ phức tạp bộ nhớ là **O(logN)**                                             |
 | Một số thuật toán AI phụ thuộc chặt vào Breadth First Search               | Đây là lý do tại sao thuật toán này thường được ưu tiên sử dụng khi việc đi qua một đồ thị là cần thiết |
-| Nó tìm những thành tố gần nó nhanh hơn (khi **đỉnh gần với nốt khởi đầu**) | Nó tìm thấy thành tố ở ngọn của nhánh nhanh hơn (khi **đỉnh ở xa nốt khởi đầu**)                            |
+| Nó tìm những thành tố gần nó nhanh hơn (khi **đỉnh gần với nốt khởi đầu**) | Nó tìm thấy thành tố ở ngọn của nhánh nhanh hơn (khi **đỉnh ở xa nốt khởi đầu**)                        |
 
 
 ## V. Ứng dụng của Depth First Search

@@ -25,7 +25,7 @@
 
 ## F
 - FIFO : first in first out
-- 
+
 
 ## G
 - Garbage collection : Thu gom rác trong quản lý bộ nhớ
