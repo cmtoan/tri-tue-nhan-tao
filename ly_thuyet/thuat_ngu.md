@@ -5,6 +5,7 @@
 - augmenting paths : đường tăng luồng
 
 ## B
+- backtracking : truy ngược, quay ngược lại
 - Big O annotation : ký hiệu O lớn, ví dụ O(N)
 - binary tree like structure : cấu trúc cây nhị phân
 - Breadth-First Search (BFS) : Tìm kiếm theo chiều rộng
@@ -36,7 +37,9 @@
 
 ## M
 - machine learning : máy học
+- matrix : ma trận
 - maximum flow : luồng cực đại
+- maze : mê cung
 
 ## N
 - node leaf : nốt lá
@@ -64,3 +67,6 @@
 
 ## V
 - vertex : đỉnh 
+
+## W
+- weighted graph : đồ thị có trọng số
