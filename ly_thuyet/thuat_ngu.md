@@ -17,6 +17,7 @@
 - deadlock : khóa chết
 - deep learning : học sâu
 - deep neutral networks : mạng neuron sâu
+- depth bound : giới hạn độ sâu
 - Depth First Search (DFS) : Tìm kiếm theo chiều sâu
 - deserialization : khôi phục tuần tự hóa
 - directed graph : đồ thị có hướng
@@ -31,6 +32,9 @@
 ## G
 - Garbage collection : Thu gom rác trong quản lý bộ nhớ
 - graph : đồ thị
+
+## I
+- Iterative deepening depth-first search (IDDFS) : Tìm kiếm theo chiều sâu với vòng lặp sâu
 
 ## L
 - LIFO : last in first out
@@ -55,12 +59,15 @@
 - queue : hàng đợi
 
 ## R
+- recursion : đệ quy
 - references : tham chiếu 
 
 ## S
+- search tree : cây tìm kiếm
 - serialization : tuần tự hóa 
 - stack : ngăn xếp
 - Strongly Connected Components (SCC) : Thành phần liên thông mạnh 
+- subgraph : đồ thị con
 
 ## T
 - Topological ordering : Sắp xếp topo

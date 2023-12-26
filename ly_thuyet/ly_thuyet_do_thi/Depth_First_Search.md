@@ -1,4 +1,4 @@
-# Depth First Search : Tìm kiếm theo chiều sâu
+# Depth First Search (DFS) - Tìm kiếm theo chiều sâu
 
 ## I. Tóm tắt
 
