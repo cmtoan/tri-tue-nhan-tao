@@ -6,7 +6,7 @@ Iterative deepening depth-first search (IDDFS) rất quan trọng trong trí tu�
 
 Breadth-First Search (BFS) thì tốt trong việc tìm kiếm lân cận nhưng lại rất tốn bộ nhớ vì nó lưu trữ các con trỏ và tham chiếu trong hàng đợi.
 
-Depth-First Search (DFS) có thể được lập trình dễ dàng bằng đệ quy nhưng thuật toán này chỉ đi tới và đi tới. DFS tốn ít bộ nhớ.
+Depth-First Search (DFS) có thể được lập trình dễ dàng bằng đệ quy nhưng thuật toán này chỉ cứ luôn đi tới về phía trước. DFS tốn ít bộ nhớ.
 
 Câu hỏi đặt ra là ta có thể xây dựng một thuật toán tìm kiếm để có thể vừa kế thừa những ưu điểm của BFS và của DFS hay không?
 
@@ -25,13 +25,13 @@ Câu trả lời là có, đó chính là thuật toán Iterative deepening dept
 
 Ta phải định nghĩa một giới hạn độ sâu (depth bound), giới hạn này cho biết là từ nốt gốc ta sẽ đi sâu bao nhiêu lớp.
 
-Ban đầu depth bound là 1, tức là ta sẽ chỉ đi tới nốt gốc với thuật toán DFS. 
+Ban đầu depth bound là 1, tức là ta sẽ chỉ đi tới nốt gốc với thuật toán DFS. Tức ta chỉ đi đến nốt A trên đồ thị.
 
-Sau đó, ta tăng biến depth bound lên 2. Tức là ta sẽ đi đến hai lớp đầu tiên của đồ thị. Ta dùng DFS để đi đến tất cả các đỉnh của cây con này.
+Sau đó, ta tăng biến depth bound lên 2. Tức là ta sẽ đi đến hai lớp đầu tiên của đồ thị. Ta dùng DFS để đi đến tất cả các đỉnh của cây con này. Với đồ thị trên ta sẽ đi đến A,B,C.
 
 Tiếp theo ta tăng giới hạn này lên 3 và ta dùng DFS khi có thể có 3 lớp. Vậy thứ tự của DFS đi đến các đỉnh của đồ thị trên với 3 lớp là A,B,D,E,C,F,G.
 
-Một lần nữa ta lại tăng giới hạn lên 4, tức ta sẽ đi đến tất cả các đỉnh của bốn lớp đầu tiên của đồ thị.
+Một lần nữa ta lại tăng giới hạn lên 4, tức ta sẽ đi đến tất cả các đỉnh của bốn lớp đầu tiên của đồ thị. Với đồ thị trên ta sẽ đi đến A,B,D,H,I,E,J,K,C,F,L,M,G,N,O.
 
 Như đã thấy, mỗi lần tăng giới hạn lên thì ta lại giải đi giải lại cùng một vấn đề vì ta dùng DFS cho cùng một chiều ngang và cùng chiều ngang của đồ thị con. Nhưng về cơ bản thì độ phức tạp của thời gian chạy cuối cùng cũng là tuyến tính.
 
