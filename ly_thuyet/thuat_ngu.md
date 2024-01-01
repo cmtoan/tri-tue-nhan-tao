@@ -1,6 +1,7 @@
 # Thuật ngữ
 
 ## A
+- A* Search
 - AI : trí tuệ nhân tạo 
 - augmenting paths : đường tăng luồng
 
@@ -33,6 +34,9 @@
 - Garbage collection : Thu gom rác trong quản lý bộ nhớ
 - graph : đồ thị
 
+## G
+- heuristic : tự tìm tòi, tự khám phá
+
 ## I
 - Iterative deepening depth-first search (IDDFS) : Tìm kiếm theo chiều sâu với vòng lặp sâu
 
@@ -41,6 +45,7 @@
 
 ## M
 - machine learning : máy học
+- Manhattan-distance : khoảng cách Manhattan
 - matrix : ma trận
 - maximum flow : luồng cực đại
 - maze : mê cung
