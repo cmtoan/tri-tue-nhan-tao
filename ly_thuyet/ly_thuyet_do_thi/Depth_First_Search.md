@@ -67,7 +67,7 @@ Depth-first search (DFS) đi đến xa nhất có thể dọc theo từng nhánh
 ## III. Code Java
 
 Vertex.java
-````
+````java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,7 +105,7 @@ public class Vertex {
 ````
 
 DepthFirstSearch.java
-````
+````java
 import java.util.List;
 import java.util.Stack;
 
@@ -145,7 +145,7 @@ public class DepthFirstSearch {
 ````
 
 DepthFirstSearchRecursive.java
-````
+````java
 import java.util.List;
 
 public class DepthFirstSearchRecursive {
@@ -174,7 +174,7 @@ public class DepthFirstSearchRecursive {
 ````
 
 Main.java
-````
+````java
 import java.util.ArrayList;
 import java.util.List;
 

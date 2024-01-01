@@ -65,7 +65,7 @@ Thuật toán kết thúc khi không còn nốt nào trong hàng đợi nữa.
 ## III. Code Java
 
 Vertex.java
-````
+````java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -103,7 +103,7 @@ public class Vertex {
 ````
 
 BreadthFirstSearch.java
-````
+````java
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -130,7 +130,7 @@ public class BreadthFirstSearch {
 ````
 
 Main.java
-````
+````java
 import java.util.List;
 
 public class Main {

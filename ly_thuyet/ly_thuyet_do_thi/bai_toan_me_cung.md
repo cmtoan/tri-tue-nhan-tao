@@ -44,7 +44,7 @@ solve(x,y):
 ## III. Code Java
 
 MazeSolver.java
-````
+````java
 public class MazeSolver {
     private final int startRow;
     private final int startColumn;
@@ -124,7 +124,7 @@ public class MazeSolver {
 ````
 
 Main.java
-````
+````java
 public class Main {
     public static void main(String[] args) {
 

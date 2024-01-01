@@ -41,7 +41,7 @@ Do đó với giới hạn độ sâu này, ta có thể kết hợp BFS với D
 ## III. Code Java
 
 Vertex.java
-````
+````java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,7 +83,7 @@ public class Vertex {
 ````
 
 IDDFS.java
-````
+````java
 import java.util.Stack;
 
 public class IDDFS {
@@ -150,7 +150,7 @@ public class IDDFS {
 ````
 
 Main.java
-````
+````java
 import java.util.List;
 
 public class Main {

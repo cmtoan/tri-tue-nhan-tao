@@ -101,12 +101,23 @@ Tổng quát, trong không gian n chiều, khoảng cách giữa hai điểm p =
 
 ## III. Minh họa thuật toán tìm kiếm A*
 
+$$(ax^2 + bx + c = 0)$$
+
+$\sqrt{3x-1}+(1+x)^2$
+
+````mermaid
+graph LR
+    A[A] --> B{B}
+    B --Yes--> C((C))
+
+````
+
 https://qiao.github.io/PathFinding.js/visual/
 
 ## VI. Code Java
 
 Vertex.java
-````
+````java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -195,7 +206,7 @@ public class Vertex {
 ````
 
 VertexComparator.java
-````
+````java
 import java.util.Comparator;
 
 public class VertexComparator implements Comparator<Vertex> {
@@ -210,7 +221,7 @@ public class VertexComparator implements Comparator<Vertex> {
 ````
 
 Edge.java
-````
+````java
 public class Edge {
     private double weight;
     private Vertex target;
@@ -232,7 +243,7 @@ public class Edge {
 ````
 
 AStarSearch.java
-````
+````java
 import java.util.*;
 
 public class AStarSearch {
@@ -310,7 +321,7 @@ public class AStarSearch {
 ````
 
 Main.java
-````
+````java
 import java.util.List;
 
 public class Main {
