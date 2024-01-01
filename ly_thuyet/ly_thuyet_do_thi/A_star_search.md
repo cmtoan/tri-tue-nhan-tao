@@ -103,7 +103,7 @@ Tổng quát, trong không gian n chiều, khoảng cách giữa hai điểm p =
 
 https://qiao.github.io/PathFinding.js/visual/
 
-## III. Code Java
+## VI. Code Java
 
 Vertex.java
 ````
