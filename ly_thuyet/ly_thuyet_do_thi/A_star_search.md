@@ -101,20 +101,6 @@ Tổng quát, trong không gian n chiều, khoảng cách giữa hai điểm p =
 
 ## III. Minh họa thuật toán tìm kiếm A*
 
-Ví dụ dưới đây ta dùng số nguyên, điểm khởi đầu là điểm O nằm ở giữa hình vuông. 
-Các điểm nằm trên đường chéo của hình vuông cách điểm O trung tâm là 14 đơn vị.
-Các điểm còn lại, không nằm trên đường chéo thì cách điểm O 10 đơn vị như trong hình dưới đây.
-
-| 14 | 10 | 14 |
-|----|----|----|
-| **10** | **O**  | **10** |
-| **14** | **10** | **14** |
-
-- g(x) : khoảng cách từ điểm khởi đầu đến điểm x 
-- h(x) : khoảng cách từ điểm x đến điểm cuối
-- f(x) = g(x) + h(x) : thuật toán tìm hàm f(x) nhỏ nhất trong mỗi vòng lặp.
-
-
 https://qiao.github.io/PathFinding.js/visual/
 
 ## III. Code Java

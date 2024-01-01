@@ -8,3 +8,4 @@ G : Graph, V : Vertex, E : Edge
 2. [Depth First Search (DFS) - Tìm kiếm theo chiều sâu](Depth_First_Search.md)
 3. [Bài toán mê cung](bai_toan_me_cung.md)
 4. [Iterative deepening depth-first search (IDDFS) - Tìm kiếm theo chiều sâu với vòng lặp sâu](Iterative_deepening_depth_first_search.md)
+5. [A* Search - Thuật toán tìm kiếm A*](A_star_search.md)
