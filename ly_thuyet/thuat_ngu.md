@@ -2,7 +2,7 @@
 
 ## A
 - A* Search
-- AI : trí tuệ nhân tạo 
+- AI (Artificial Intelligence) : trí tuệ nhân tạo 
 - augmenting paths : đường tăng luồng
 
 ## B
@@ -10,8 +10,10 @@
 - Big O annotation : ký hiệu O lớn, ví dụ O(N)
 - binary tree like structure : cấu trúc cây nhị phân
 - Breadth-First Search (BFS) : Tìm kiếm theo chiều rộng
+- Brute-Force Search : Tìm kiếm bằng cách vét cạn
 
 ## C
+- combinatorial explosion : bùng nổ tổ hợp
 - cycle detection : Phát hiện chu trình
 
 ## D
@@ -51,6 +53,7 @@
 - maze : mê cung
 
 ## N
+- neural networks : mạng neural, mạng thần kinh nhân tạo
 - node leaf : nốt lá
 
 ## O
@@ -61,6 +64,7 @@
 - process : tiến trình
 
 ## Q
+- Quadratic optimization : Quy hoạch toàn phương
 - queue : hàng đợi
 
 ## R
@@ -76,8 +80,10 @@
 
 ## T
 - Topological ordering : Sắp xếp topo
+- travelling salesman problem : bài toán thương nhân đi buôn
 
 ## V
+- Vehicle routing problem : bài toán định tuyến đi của xe
 - vertex : đỉnh 
 
 ## W

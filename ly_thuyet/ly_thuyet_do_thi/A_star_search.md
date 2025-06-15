@@ -101,6 +101,17 @@ Tổng quát, trong không gian n chiều, khoảng cách giữa hai điểm p =
 
 ## III. Minh họa thuật toán tìm kiếm A*
 
+$$(ax^2 + bx + c = 0)$$
+
+$\sqrt{3x-1}+(1+x)^2$
+
+````mermaid
+graph LR
+    A[A] --> B{B}
+    B --Yes--> C((C))
+
+````
+
 https://qiao.github.io/PathFinding.js/visual/
 
 ## VI. Code Java
